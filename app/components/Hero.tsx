@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 import { useEffect, useState } from "react";
 
@@ -30,6 +31,7 @@ export default function Hero() {
         setCharIdx((c) => c - 1);
       }, 35);
     } else if (deleting && charIdx === 0) {
+      
       setDeleting(false);
       setRoleIdx((r) => (r + 1) % roles.length);
     }

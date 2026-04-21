@@ -82,7 +82,7 @@ export default function Contact() {
                   background: "var(--bg)",
                   textDecoration: "none",
                   transition: "background 0.2s",
-                  group: "true",
+                  
                 }}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.background =
